@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunita | Projects</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        color: #fff;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .section-title {
+        font-weight: 700;
+        font-size: 2.5rem;
+        text-align: center;
+        margin: 4rem 0 2rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      .project-card {
+        background: rgba(255, 255, 255, 0.05);
+        border: none;
+        border-radius: 15px;
+        transition: transform 0.3s, box-shadow 0.3s;
+        overflow: hidden;
+      }
+
+      .project-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+      }
+
+      .project-card img {
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .project-card h5 {
+        color: #fff;
+      }
+
+      .project-card p {
+        color: #ddd;
+      }
+
+      .btn-primary {
+        background-color: #6c63ff;
+        border: none;
+      }
+
+      .btn-primary:hover {
+        background-color: #5750d6;
+      }
+
+      footer {
+        background: #000;
+        padding: 1rem 0;
+        text-align: center;
+        color: #aaa;
+      }
+
+      footer p {
+        margin: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-4" href="index.html">Sunita</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Python Projects -->
+    <section id="python" class="container py-5 mt-5">
+      <h2 class="section-title">🐍 Python Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100">
+            <img src="images/project1.jpg" alt="Data Cleaner" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Data Cleaner</h5>
+              <p class="card-text flex-grow-1">
+                A Python script that cleans messy CSV files and removes
+                duplicates using <b>Pandas</b>.
+              </p>
+              <a href="#" class="btn btn-primary mt-2">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Django Projects -->
+    <section id="django" class="container py-5">
+      <h2 class="section-title">🕸️ Django Projects</h2>
+      <div class="row g-4">
+        <!-- MoodMate Project -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100">
+            <img src="images/moodmate.jpg" alt="MoodMate App" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">
+                🌙 MoodMate – A Mood-Based Journal with AI Quotes
+              </h5>
+              <p class="card-text flex-grow-1">
+                MoodMate is a mood-based journal web app built with
+                <b>Django</b>. Users can record moods, add journal entries, and
+                get mood-matching quotes 💬.
+              </p>
+              <p class="card-text">
+                <b>✨ Features:</b><br />
+                📝 Mood tracking & journal<br />
+                💬 Motivational quotes<br />
+                🔒 Authentication<br />
+                📊 Mood dashboard<br />
+                🎨 Bootstrap UI
+              </p>
+              <a
+                href="https://github.com/sunitachaulagain/MoodMate"
+                target="_blank"
+                class="btn btn-primary mt-2"
+                >View Project</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100">
+            <img src="images/project3.jpg" alt="E-commerce App" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Django E-commerce</h5>
+              <p class="card-text flex-grow-1">
+                A full-stack e-commerce site with product listings, user login,
+                and payment gateway integration.
+              </p>
+              <a href="#" class="btn btn-primary mt-2">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- React Projects -->
+    <section id="react" class="container py-5">
+      <h2 class="section-title">⚛️ React Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100">
+            <img src="images/react-weather.jpg" alt="Weather App" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Weather App</h5>
+              <p class="card-text flex-grow-1">
+                Built with <b>React</b> and OpenWeather API to show real-time
+                weather updates with location search.
+              </p>
+              <a href="#" class="btn btn-primary mt-2">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI / ML Projects -->
+    <section id="ai-ml" class="container py-5">
+      <h2 class="section-title">🤖 AI / ML Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100">
+            <img src="images/ai-chatbot.jpg" alt="AI Chatbot" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">AI Chatbot</h5>
+              <p class="card-text flex-grow-1">
+                A conversational chatbot built using <b>Python</b>, <b>NLTK</b>,
+                and <b>Machine Learning</b> to respond intelligently.
+              </p>
+              <a href="#" class="btn btn-primary mt-2">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Sunita | Built with ❤️ using Bootstrap</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
